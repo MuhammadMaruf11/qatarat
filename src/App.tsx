@@ -1,20 +1,20 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { Route, Routes } from 'react-router-dom'
 import './App.css'
-import ProductList from './pages/ProductList'
 import Home from './pages/Home'
 import SingleProduct from './pages/SingleProduct'
+import Profile from './pages/Profile'
+import Products from './pages/Products'
 
 function App() {
 
 
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/products" element={<ProductList />} />
-        <Route path="/products/:productId" element={<SingleProduct />} />
-      </Routes>
-    </BrowserRouter>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/products" element={<Products />} />
+      <Route path="/products/:productId" element={<SingleProduct />} />
+      <Route path="/profile" element={<Profile />} />
+    </Routes>
   )
 }
 

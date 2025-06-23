@@ -1,8 +1,12 @@
+import Layout from "../components/Layout"
+import SingleComponents from "../components/SingleComponents/SingleComponents"
 
 
 const SingleProduct = () => {
     return (
-        <div>SingleProduct</div>
+        <Layout>
+            <SingleComponents />
+        </Layout>
     )
 }
 
