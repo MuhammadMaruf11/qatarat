@@ -23,9 +23,7 @@ const ProductList: React.FC = () => {
     const totalPages = Math.ceil(products.length / itemsPerPage);
 
     return (
-        <div className="p-4 max-w-7xl mx-auto">
-            <h1 className="text-3xl font-bold mb-6 text-center">Explore Products</h1>
-
+        <div className="max-w-3xl mx-auto">
             {loading && <p className="text-center text-blue-600">Loading products...</p>}
             {error && <p className="text-center text-red-500">{error}</p>}
 
